@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/MakeRrabbitTech/static/css/main.ee6cd3f8.css",
-    "main.js": "/MakeRrabbitTech/static/js/main.994eb5f8.js",
-    "static/js/488.4cb29323.chunk.js": "/MakeRrabbitTech/static/js/488.4cb29323.chunk.js",
-    "static/media/1111.jpg": "/MakeRrabbitTech/static/media/1111.8101c306d191252b49ab.jpg",
-    "static/media/company.jpg": "/MakeRrabbitTech/static/media/company.3a0ddd5a912661c3c64b.jpg",
-    "static/media/banner.jpeg": "/MakeRrabbitTech/static/media/banner.40d2140c688b17ae1e08.jpeg",
-    "static/media/cooperate.jpg": "/MakeRrabbitTech/static/media/cooperate.d4d8714177bfb793dd4b.jpg",
-    "static/media/3.png": "/MakeRrabbitTech/static/media/3.d62bd871a8a2e9536fd6.png",
-    "index.html": "/MakeRrabbitTech/index.html",
-    "main.ee6cd3f8.css.map": "/MakeRrabbitTech/static/css/main.ee6cd3f8.css.map",
-    "main.994eb5f8.js.map": "/MakeRrabbitTech/static/js/main.994eb5f8.js.map",
-    "488.4cb29323.chunk.js.map": "/MakeRrabbitTech/static/js/488.4cb29323.chunk.js.map"
+    "main.css": "/static/css/main.10168677.css",
+    "main.js": "/static/js/main.01e1e329.js",
+    "static/js/488.4cb29323.chunk.js": "/static/js/488.4cb29323.chunk.js",
+    "static/media/1111.jpg": "/static/media/1111.8101c306d191252b49ab.jpg",
+    "static/media/company.jpg": "/static/media/company.3a0ddd5a912661c3c64b.jpg",
+    "static/media/banner.jpeg": "/static/media/banner.40d2140c688b17ae1e08.jpeg",
+    "static/media/cooperate.jpg": "/static/media/cooperate.d4d8714177bfb793dd4b.jpg",
+    "static/media/3.png": "/static/media/3.d62bd871a8a2e9536fd6.png",
+    "index.html": "/index.html",
+    "main.10168677.css.map": "/static/css/main.10168677.css.map",
+    "main.01e1e329.js.map": "/static/js/main.01e1e329.js.map",
+    "488.4cb29323.chunk.js.map": "/static/js/488.4cb29323.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee6cd3f8.css",
-    "static/js/main.994eb5f8.js"
+    "static/css/main.10168677.css",
+    "static/js/main.01e1e329.js"
   ]
 }
