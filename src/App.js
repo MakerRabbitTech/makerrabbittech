@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HomeOutlined, BulbOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
-import { BrowserRouter as Router, Route, Link, Routes, useLocation } from 'react-router-dom';
+import {  HashRouter  as Router, Route, Link, Routes, useLocation } from 'react-router-dom';
 import './MenuComponent.css';
 
 import HomePage from './HomePage';
