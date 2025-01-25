@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', '微軟正黑體', sans-serif;
+    line-height: 1.6;
+}
+
+/* button */
+button {
+    background-color: #CA6702;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #B85C02;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Slogan */
+.slogan {
+    text-align: center;
+    padding-top: 150px; /* 替代 margin-top */
+    padding-bottom: 100px; /* 替代 margin-bottom */
+    position: relative;
+    overflow: hidden;
+    color: white;
+   
+    
+}
+.sloganContent {
+    opacity: 0;
+    transform: translateY(20px); /* 初始向下移動一點 */
+    transition: opacity 1s ease-in-out, transform 1.2s ease-in-out;
+}
+
+.sloganContent.visible {
+    opacity: 1;
+    transform: translateY(0); /* 回到原位 */
+}
+.slogan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/1111.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+
+.slogan h1, .slogan h2, .slogan p, .slogan button {
+    position: relative; /* 讓內容層級高於背景 */
+    margin-top: 15px;
+    z-index: 1;
+}
+
+
+.slogan.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slogan h2, .slogan p, .slogan button {
+    margin-top: 15px;
+}
+
+/* Company Content */
+.CompanyContent {
+    padding: 30px;
+    margin: 60px;
+    background-color: #23395B;
+    color: white;
+  
+}
+
+/* About Us */
+.AboutUs {
+    display: flex;
+    align-items: center;
+    gap: 100px; 
+    margin-bottom: 50px;
+}
+
+.SecondTitle {
+    border-left: solid 3px #CA6702;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.AboutUsContent {
+    width: 60%;
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.AboutUsContent.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.AboutUsContentPhoto {
+    width: 40%;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.AboutUsContentPhoto.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.photo-shadow1 {
+    box-shadow: 20px 20px 0px #8EA8C3 !important;
+}
+
+/* Team Concept */
+.TeamConcept {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px; 
+    margin-bottom: 50px;
+}
+
+.TeamConceptContent {
+    width: 60%;
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.TeamConceptContent.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.TeamConceptPhoto {
+    width: 40%;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.TeamConceptPhoto.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.TeamConceptText {
+    background-color: #8EA8C3;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 20px;
+}
+
+/* Talent Recruitment*/
+.TalentRecruitment {
+    text-align: center;
+    position: relative;
+    height: 550px;
+    width: 100%;
+}
+
+.TalentRecruitment::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+}
+
+.TalentRecruitmentContent {
+    position: relative;
+    z-index: 1;
+    padding: 100px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.TalentRecruitmentContent.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.TalentRecruitmentContent button {
+    margin-top: 20px;
+}
+
+/* Appointment Consultation  */
+.AppointmentConsultation {
+    margin: 200px 0 100px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.AppointmentConsultation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.AppointmentConsultation button {
+    margin-top: 30px;
+}
+
+
+
+/* social media icon */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FF8000;
+}
+
+/* 響應式 */
+@media (max-width: 992px) {
+    .slogan {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .AboutUs, .TeamConcept {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .AboutUsContent, .TeamConceptContent {
+        width: 100%;
+    }
+
+    .AboutUsContentPhoto, .TeamConceptPhoto {
+        width: 100%;
+    }
+
+    .slogan h1 {
+        font-size: 36px !important;
+    }
+
+    .slogan h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        padding: 0 15px;
+    }
+
+    .CompanyContent {
+        padding: 15px;
+    }
+
+    .TeamConceptText {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .TalentRecruitmentContent {
+        padding: 50px 15px;
+    }
+}
+
+
+img, .ant-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.slogan, .CompanyContent, .TalentRecruitment, .AppointmentConsultation {
+    overflow-x: hidden;
+    max-width: 100%;
+}

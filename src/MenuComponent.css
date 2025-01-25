@@ -1,0 +1,33 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #161925;
+    margin-top: 46px; /* 根據 Menu 高度調整 */
+  }
+  
+  .custom-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 確保在其他內容上層 */
+    background: #161925; /* 確保背景色一致 */
+  }
+  
+  .custom-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color: #2a3042 !important;
+  }
+  
+  .custom-menu.ant-menu-dark .ant-menu-item:hover {
+    background-color: #2a3042 !important;
+  }
+  
+  .custom-menu.ant-menu-dark .ant-menu-submenu-selected {
+    background-color: #2a3042 !important;
+  }
+  
+  .custom-menu.ant-menu-dark .ant-menu-submenu:hover {
+    background-color: #2a3042 !important;
+  }

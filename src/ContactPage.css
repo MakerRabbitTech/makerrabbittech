@@ -1,0 +1,150 @@
+.Contact {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ContactPhoto {
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 130px;
+    margin: 20px auto;
+    width: 80%;
+    
+
+}
+
+.ContactPhoto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/cooperate.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* 修改分隔線樣式 */
+.Divider .ant-divider {
+
+    color: white;
+    border-color: white;
+    width: 60%;  /* 調整線的寬度 */
+    margin: 0px auto;  /* 置中 */
+ }
+ /* 修改文字樣式 */
+ .Divider .ant-divider-inner-text {
+    font-size: 26px;
+    font-weight: bold;
+ }
+
+ .promise{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex: 1;
+ }
+
+ .promiseContent{
+    color: black;
+    background-color: #DAE3E5;
+    border-radius: 25px;
+    width: 25%;
+    height: 100%;
+    margin: 20px auto;  /* 增加上下間距 */
+    text-align: center;
+    padding: 30px;  /* 增加內部間距 */
+ }
+ .promiseContent h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+ }
+
+ .iconCircle {
+    background-color: #9B2226;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    
+  }
+  
+  .iconCircle span {
+    font-size: 30px;
+    color: white;
+  }
+
+
+  .form {
+   background-color: #DAE3E5;
+   color: black;
+   width: 100%;
+   height: 100%;
+   margin-top: 50px;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .form h2{
+   margin-bottom: 20px;
+   margin-right: 50px;
+ }
+ 
+ .form .ant-form {
+   margin: 0 auto;
+   width: 80%;
+   max-width: 600px;
+ }
+ 
+ .ant-select-selection-item,
+ .ant-select-item-option-content {
+   color: black;
+ }
+
+ .contactDetail{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    justify-items: center;
+    
+ }
+ .contactDetail h2{
+    margin-top: 20px;
+    font-size: 26px;
+ }
+ .contactDetail p{
+    margin-top: 10px;
+ }
+
+
+ .button {
+   background-color: #FF8000;
+   border-color: #FF8000;
+   color: white !important;
+   border-radius: 20px;
+  }
+  
+  .button:hover {
+   background-color: #B85C02 !important;
+   border-color: #B85C02 !important;
+   color: white !important;
+  }
+  
+  .button:active {
+   transform: scale(0.98);
+   background-color: #B85C02 !important;
+   border-color: #B85C02 !important;
+   color: white !important;
+  }
