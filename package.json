@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
   },
-  "homepage": "https://makerrabbittech.github.io/makerrabbittech",
+  "homepage": "https://MakerRabbitTech.github.io/makerrabbittech",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
