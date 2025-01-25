@@ -34,11 +34,11 @@
 
 /* 修改分隔線樣式 */
 .Divider .ant-divider {
-
+  
     color: white;
     border-color: white;
     width: 60%;  /* 調整線的寬度 */
-    margin: 0px auto;  /* 置中 */
+    margin: 50px auto;  /* 置中 */
  }
  /* 修改文字樣式 */
  .Divider .ant-divider-inner-text {
@@ -46,46 +46,85 @@
     font-weight: bold;
  }
 
- .promise{
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex: 1;
+ .promise {
+   margin: 20px 50px; /* 整體間距稍微縮小 */
+   display: flex;
+   flex: 1;
+   justify-content: space-between; /* 讓三個框框平分空間 */
+   gap: 15px; /* 框框之間的間距調小 */
  }
-
- .promiseContent{
-    color: black;
-    background-color: #DAE3E5;
-    border-radius: 25px;
-    width: 25%;
-    height: 100%;
-    margin: 20px auto;  /* 增加上下間距 */
-    text-align: center;
-    padding: 30px;  /* 增加內部間距 */
+ 
+ .promiseContent {
+   color: black;
+   background-color: #DAE3E5;
+   border-radius: 20px;
+   width: 30%; /* 每個框框占整行的 30%，保證同一排顯示 */
+   text-align: center;
+   padding: 20px; /* 縮小內部 padding */
+   transition: transform 0.3s ease; /* 增加 hover 動畫效果 */
  }
- .promiseContent h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
+ 
+ .promiseContent:hover {
+   transform: translateY(-5px); /* 滑鼠懸停時稍微提升 */
  }
-
+ 
+ .promiseContent h2 {
+   margin-top: 10px;
+   margin-bottom: 15px; /* 縮小上下間距 */
+ }
+ 
  .iconCircle {
-    background-color: #9B2226;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    
-  }
-  
-  .iconCircle span {
-    font-size: 30px;
-    color: white;
-  }
-
-
+   background-color: #9B2226;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px; /* 圓圈縮小以匹配更小的框框 */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 15px auto; /* 間距稍微縮小 */
+ }
+ 
+ .iconCircle span {
+   font-size: 24px; /* 縮小圖示大小 */
+ }
+ 
+ /* 響應式設計 */
+ @media (max-width: 768px) {
+   .promise {
+     flex-direction: column; /* 小螢幕改為垂直堆疊 */
+     align-items: center;
+     gap: 20px; /* 框框之間的間距加大 */
+   }
+ 
+   .promiseContent {
+     width: 90%; /* 小螢幕下框框佔據更多空間 */
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .promiseContent {
+     padding: 15px; /* 減少小螢幕的內部間距 */
+   }
+ 
+   .iconCircle {
+     width: 40px;
+     height: 40px; /* 圓圈更小 */
+   }
+ 
+   .iconCircle span {
+     font-size: 20px; /* 圖示大小縮小 */
+   }
+ 
+   .promiseContent h2 {
+     font-size: 16px; /* 縮小標題字體 */
+   }
+ 
+   .promiseContent p {
+     font-size: 14px; /* 縮小內文字體 */
+   }
+ }
+ 
+ 
   .form {
    background-color: #DAE3E5;
    color: black;
@@ -148,3 +187,48 @@
    border-color: #B85C02 !important;
    color: white !important;
   }
+
+
+  .promise {
+   margin: 0 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+@media (min-width: 768px) {
+   .promise {
+       flex-direction: row;
+       gap: 40px;
+   }
+}
+
+.promiseContent {
+   background-color: #DAE3E5;
+   border-radius: 25px;
+   width: 100%;
+   padding: 30px;
+   text-align: center;
+}
+
+@media (min-width: 768px) {
+   .promiseContent {
+       width: 33.33%;
+   }
+}
+
+.iconCircle {
+   background-color: #9B2226;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px auto;
+}
+
+.iconCircle span {
+   font-size: 30px;
+   color: white;
+}
