@@ -81,7 +81,7 @@ const MenuContent = () => {
 
 const MenuComponent = () => {
  return (
-   <Router basename="/makerrabbittech.github.io">
+  <Router basename="/makerrabbittech">
      <MenuContent />
      <Routes>
        <Route path="/" element={<HomePage />} />
