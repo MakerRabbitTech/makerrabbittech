@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/makerrabbittech/static/css/main.163d35b2.css",
+    "main.css": "/makerrabbittech/static/css/main.20a9854e.css",
     "main.js": "/makerrabbittech/static/js/main.783ff320.js",
     "static/js/488.4cb29323.chunk.js": "/makerrabbittech/static/js/488.4cb29323.chunk.js",
     "static/media/1111.jpg": "/makerrabbittech/static/media/1111.8101c306d191252b49ab.jpg",
@@ -9,12 +9,12 @@
     "static/media/cooperate.jpg": "/makerrabbittech/static/media/cooperate.d4d8714177bfb793dd4b.jpg",
     "static/media/3.png": "/makerrabbittech/static/media/3.d62bd871a8a2e9536fd6.png",
     "index.html": "/makerrabbittech/index.html",
-    "main.163d35b2.css.map": "/makerrabbittech/static/css/main.163d35b2.css.map",
+    "main.20a9854e.css.map": "/makerrabbittech/static/css/main.20a9854e.css.map",
     "main.783ff320.js.map": "/makerrabbittech/static/js/main.783ff320.js.map",
     "488.4cb29323.chunk.js.map": "/makerrabbittech/static/js/488.4cb29323.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.163d35b2.css",
+    "static/css/main.20a9854e.css",
     "static/js/main.783ff320.js"
   ]
 }
