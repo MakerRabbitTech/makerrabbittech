@@ -213,6 +213,10 @@ button:active {
 .TalentRecruitmentContent button {
     margin-top: 20px;
 }
+a {
+    color: white;
+    text-decoration: none;
+   }
 
 /* Appointment Consultation  */
 .AppointmentConsultation {

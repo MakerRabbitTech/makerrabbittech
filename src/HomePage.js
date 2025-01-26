@@ -73,8 +73,8 @@ const HomePage = () => {
                     <h2 style={{ color: '#FF8000', fontSize: '32px' }}>Innovate Today Leap Beyond Tomorrow</h2>
                     <p>用科技賦能傳統  創造產業新價值</p>
                     <Link to="/services">
-  <button>了解更多</button>
-</Link>
+                        <button>了解更多</button>
+                    </Link>
                 </div>
             </div>
             <div className='CompanyContent'>
@@ -129,13 +129,23 @@ const HomePage = () => {
                 <div className='TalentRecruitmentContent' ref={talentRecruitmentContentRef}>
                     <h1 style={{ color: '#FF8000', fontSize: '40px' }}>人才招募</h1>
                     <h3>竭誠歡迎，與我們相同理念並懷抱夢想、熱情的人才加入</h3>
-                    <button>了解更多</button>
+                    <button><a href="https://docs.google.com/forms/d/e/1FAIpQLScS50Dj_yZTUXervVzMj_aFZ7u-A-5X9GZE_jjogktkMU0XoQ/viewform?usp=header" target="_blank">了解更多</a></button>
                 </div>
             </div>
             <div className='AppointmentConsultation' ref={appointmentConsultationRef}>
                 <h1 >想了解如何為您的企業開創新局面？</h1>
                 <p>免費諮詢、客製化解決方案評估、產業轉型策略建議</p>
-                <button>立即預約諮詢</button>
+                <Link to="/contact" onClick={() => {
+                    setTimeout(() => {
+                        const element = document.getElementById('consultation-form');
+                        if (element) {
+                            const offset = element.offsetTop - 100; // 調整這個數值來控制位置
+                            window.scrollTo({ top: offset, behavior: 'smooth' });
+                        }
+                    }, 100);
+                }}>
+                    <button>立即預約諮詢</button>
+                </Link>
             </div>
             <footer className='copyright'>
                 <div className='copyright'>

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { Divider, Button, Form, Input, Select, Space } from 'antd';
 import { CheckOutlined, SettingOutlined, RiseOutlined } from '@ant-design/icons';
 import { FacebookOutlined, InstagramOutlined } from '@ant-design/icons';
 import { SiLine } from 'react-icons/si';
-
 import './page.css'
 import './ContactPage.css'
 
@@ -58,6 +57,9 @@ const ContactPage = () => {
       gender: 'male',
     });
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
   return (
@@ -93,7 +95,7 @@ const ContactPage = () => {
           <p>與客戶共同學習成長，追求技術與服務的持續進步</p>
         </div>
       </div>
-      <div className='form'>
+      <div className='form' id="consultation-form">
         <h2>立即預約諮詢</h2>
         <Form
           {...layout}

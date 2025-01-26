@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState ,useEffect} from 'react';
 import { Carousel, Collapse, Steps } from 'antd';
 import { FacebookOutlined, InstagramOutlined, BulbOutlined, AppstoreOutlined, GlobalOutlined, CodeSandboxOutlined, SettingOutlined, MobileOutlined,
   CodeOutlined,CloudServerOutlined,ApiOutlined,EditOutlined} from '@ant-design/icons';
@@ -20,7 +20,10 @@ const ServicesPage = () => {
   const handleAfterChange = (index) => {
     setCurrentIndex(index); // 當 Carousel 滑動後更新 index
   };
-
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
 
   return (
     <div>
