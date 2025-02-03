@@ -63,9 +63,9 @@ const MenuContent = () => {
   return (
     <>
       <Helmet>
-        <title>創客兔科技 - 專業客製化軟體開發服務</title>
-        <meta name="description" content="創客兔科技專注於APP開發、WEB開發與MCU韌體設計，為企業提供專業的數位轉型解決方案。" />
-        <meta name="keywords" content="創客兔,MakerRabbit,APP開發,網站開發,韌體開發,軟體開發,數位轉型" />
+        <title>創客兔科技 MakerRabbit Tech | APP開發 | WEB開發 | MCU開發 | 數位轉型解決方案</title>
+        <meta name="description" content="創客兔科技 MakerRabbit Tech 提供專業的APP開發、網站開發、韌體開發服務，為企業打造客製化數位轉型方案。我們專注於創新技術，協助企業優化營運效率，創造更高商業價值。" />
+        <meta name="keywords" content="創客兔科技,MakerRabbit Tech,APP開發,網站開發,韌體開發,軟體開發,數位轉型,MCU開發,物聯網,系統整合,客製化軟體" />
       </Helmet>
       <div className="custom-menu-container">
         <Menu
