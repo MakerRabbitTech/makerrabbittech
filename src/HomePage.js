@@ -92,7 +92,7 @@ const HomePage = () => {
                         <Image
                             width={500}
                             className="photo-shadow1"
-                            src="https://image-cdn.learnin.tw/bnextmedia/image/shutterstock/2016-08/img-1472814967-73958.jpg?w=900&output=webp"
+                            src={require("./images/pexels-fauxels-3183127.jpg")}
                         />
                     </div>
                 </div>
