@@ -1,10 +1,11 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Divider, Button, Form, Input, Select, Space } from 'antd';
 import { CheckOutlined, SettingOutlined, RiseOutlined } from '@ant-design/icons';
 import { FacebookOutlined, InstagramOutlined } from '@ant-design/icons';
 import { SiLine } from 'react-icons/si';
 import './page.css'
 import './ContactPage.css'
+import { message } from 'antd';
 
 const { Option } = Select;
 const layout = {
@@ -45,8 +46,36 @@ const ContactPage = () => {
       default:
     }
   };
+  // 將原本的 onFinish 函數替換成這個:
   const onFinish = (values) => {
-    console.log(values);
+    // Google Form 的提交 URL
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeLQga6-JBIB4z8sAl7yuRRnzmDiqRkbiKVQshx4JB-hWFSbw/formResponse';
+
+    // 創建表單數據
+    const formData = new URLSearchParams({
+      'entry.678500724': values.name,    // 姓名
+      'entry.627332193': values.email,   // 電子郵件
+      'entry.1122549379': values.phone,  // 電話
+      'entry.331295550': values.service  // 服務內容
+    });
+
+    // 發送表單數據到 Google Form
+    fetch(googleFormUrl, {
+      method: 'POST',
+      mode: 'no-cors', // 必要,因為 Google Forms 不支援 CORS
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: formData,
+    })
+      .then(() => {
+        message.success('表單提交成功！');
+        form.resetFields();
+      })
+      .catch((error) => {
+        message.error('提交失敗，請稍後再試');
+        console.error('Error:', error);
+      });
   };
   const onReset = () => {
     form.resetFields();
