@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Divider, Button, Form, Input, Select, Space } from 'antd';
+import { Divider, Button, Form, Input, Select, Space, message } from 'antd';
 import { CheckOutlined, SettingOutlined, RiseOutlined } from '@ant-design/icons';
 import { FacebookOutlined, InstagramOutlined } from '@ant-design/icons';
 import { SiLine } from 'react-icons/si';
 import './page.css'
 import './ContactPage.css'
-import { message } from 'antd';
 
 const { Option } = Select;
 const layout = {
@@ -25,6 +24,7 @@ const tailLayout = {
 
 
 const ContactPage = () => {
+  const [messageApi, contextHolder] = message.useMessage();
   const [form] = Form.useForm();
   const onGenderChange = (value) => {
     switch (value) {
@@ -47,35 +47,43 @@ const ContactPage = () => {
     }
   };
   // 將原本的 onFinish 函數替換成這個:
-  const onFinish = (values) => {
-    // Google Form 的提交 URL
+  const onFinish = async (values) => {
     const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeLQga6-JBIB4z8sAl7yuRRnzmDiqRkbiKVQshx4JB-hWFSbw/formResponse';
 
-    // 創建表單數據
     const formData = new URLSearchParams({
-      'entry.678500724': values.name,    // 姓名
-      'entry.627332193': values.email,   // 電子郵件
-      'entry.1122549379': values.phone,  // 電話
-      'entry.331295550': values.service  // 服務內容
+      'entry.678500724': values.name,
+      'entry.627332193': values.email,
+      'entry.1122549379': values.phone,
+      'entry.331295550': values.service
     });
 
-    // 發送表單數據到 Google Form
-    fetch(googleFormUrl, {
-      method: 'POST',
-      mode: 'no-cors', // 必要,因為 Google Forms 不支援 CORS
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: formData,
-    })
-      .then(() => {
-        message.success('表單提交成功！');
-        form.resetFields();
-      })
-      .catch((error) => {
-        message.error('提交失敗，請稍後再試');
-        console.error('Error:', error);
+    try {
+      await fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: formData,
       });
+
+      messageApi.open({
+        type: 'success',
+        content: '表單提交成功！我們的團隊將會盡快與您聯繫。',
+        className: 'custom-message',
+        style: {
+          marginTop: '10vh',
+          color: '#000000',  
+        },
+        duration: 3,
+      });
+      
+      form.resetFields();
+
+    } catch (error) {
+      console.error('Error:', error);
+      messageApi.error('提交失敗，請稍後再試');
+    }
   };
   const onReset = () => {
     form.resetFields();
@@ -93,6 +101,7 @@ const ContactPage = () => {
 
   return (
     <div>
+      {contextHolder}
       <div className='Contact'>
         <h1>聯絡我們</h1>
         <p>我們的團隊將竭誠為您服務，打造最適合您的解決方案</p>
@@ -125,6 +134,7 @@ const ContactPage = () => {
         </div>
       </div>
       <div className='form' id="consultation-form">
+
         <h2>立即預約諮詢</h2>
         <Form
           {...layout}

@@ -232,3 +232,16 @@
    font-size: 30px;
    color: white;
 }
+
+/* 強制覆蓋 message 文字顏色 */
+.ant-message-custom-content {
+  color: black !important;
+}
+
+.ant-message-success .ant-message-custom-content {
+  color: black !important;
+}
+
+.ant-message .ant-message-notice-content {
+  color: black !important;
+}
