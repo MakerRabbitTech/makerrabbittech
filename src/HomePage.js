@@ -151,13 +151,13 @@ const HomePage = () => {
                 <div className='copyright'>
                     Copyright © 2025 MakerRabbit Tech 創客兔科技有限公司 著作權所有。All Rights Reserved.
                     <div className='social-media'>
-                        <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                             <FacebookOutlined className="social-icon" />
                         </a>
-                        <a href="https://www.instagram.com/YourPage" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                             <InstagramOutlined className="social-icon" />
                         </a>
-                        <a href="https://line.me/YourPage" target="_blank" rel="noopener noreferrer">
+                        <a href="https://line.me" target="_blank" rel="noopener noreferrer">
                             <SiLine className="social-icon" />
                         </a>
                     </div>
