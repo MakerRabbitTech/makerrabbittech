@@ -78,9 +78,6 @@ const ServicesPage = () => {
                     <div className="hashTagContent">
                       <p>#react native</p>
                     </div>
-                    <div className="hashTagContent">
-                      <p>#react native</p>
-                    </div>
                   </div>
                   <div className='ServiceContentContainer'>
                     <div className="ServiceContentDetails">
@@ -158,9 +155,6 @@ const ServicesPage = () => {
 
                   <div className="hashTag">
                     <div className="hashTagContent">
-                      <p>#HTML5</p>
-                    </div>
-                    <div className="hashTagContent">
                       <p>#react</p>
                     </div>
                     <div className="hashTagContent">
@@ -170,7 +164,10 @@ const ServicesPage = () => {
                       <p>#Vue.js</p>
                     </div>
                     <div className="hashTagContent">
-                      <p>#Css3</p>
+                      <p>#Css</p>
+                    </div>
+                    <div className="hashTagContent">
+                      <p>#HTML</p>
                     </div>
                   </div>
                   <div className='ServiceContentContainer'>
@@ -246,13 +243,10 @@ const ServicesPage = () => {
                   </h1>
                   <div className="hashTag">
                     <div className="hashTagContent">
-                      <p>#ARM</p>
+                      <p>#STM32</p>
                     </div>
                     <div className="hashTagContent">
-                      <p>#AVR</p>
-                    </div>
-                    <div className="hashTagContent">
-                      <p>#PIC</p>
+                      <p>#Arduino</p>
                     </div>
                   </div>
                   <div className='ServiceContentContainer'>
