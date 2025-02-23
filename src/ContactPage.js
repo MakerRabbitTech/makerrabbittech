@@ -103,7 +103,7 @@ const ContactPage = () => {
     <div>
       {contextHolder}
       <div className='Contact'>
-        <h1>聯絡我們</h1>
+        <h1 style={{ fontSize: '40px' }}>聯絡我們</h1>
         <p>我們的團隊將竭誠為您服務，打造最適合您的解決方案</p>
       </div>
       <div className='ContactPhoto'></div>
