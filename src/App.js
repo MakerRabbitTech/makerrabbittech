@@ -29,7 +29,20 @@ const MenuContent = () => {
 
   const items = [
     {
-      label: (<Link to="/" style={{ fontWeight: 'bold' }}>創客兔 MakerRabbit Tech</Link>),
+      label: (
+        <div className="flex items-center">
+          <img 
+            src={require("./images/logo.png")}
+            alt="MakerRabbit Logo"
+            width='20px'
+            height='20px'
+            style={{ marginRight: '10px' , verticalAlign: 'middle',marginBottom:'5px' }}
+          />
+          <Link to="/" className="font-bold">
+            創客兔 MakerRabbit Tech
+          </Link>
+        </div>
+      ),
       key: 'main1',
       style: { marginRight: 'auto' }
     },

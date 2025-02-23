@@ -4,7 +4,7 @@ import './page.css'
 const SolutionsPage  = () => {
   return (
     <div>
-          解決方案
+          <h2 style={{textAlign:'center',marginTop:'100px'}}>解決方案 Coming Soon!!!</h2>
      </div>
   );
 };
