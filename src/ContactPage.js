@@ -196,7 +196,7 @@ const ContactPage = () => {
       <div className='contactDetail'>
         <h2 style={{ color: '#CA6702' }}>聯絡資訊</h2>
         {/* <p>電話 : 09123456789 </p> */}
-        <p>Email : makerrabbit.tech@gmail.com</p>
+        <p>Email : makerrabbittech@gmail.com</p>
         <h2 style={{ color: '#CA6702' }}>營業時間</h2>
         <p>週一至週五：09:00 - 18:00</p>
         <p>週六、週日：休息</p>
