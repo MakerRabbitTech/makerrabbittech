@@ -279,7 +279,7 @@ const ServicesPage = () => {
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>應用實現</span>
                       <ul>
                         <li>即時資料蒐集與分析</li>
-                        <li>無線通訊模組整合（Wi-Fi/BLE）</li>
+                        <li>無線通訊模組整合（Wi-Fi/BLE/LoRa）</li>
                         <li>嵌入式系統穩定性測試</li>
                       </ul>
                     </div>
