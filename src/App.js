@@ -32,10 +32,10 @@ const MenuContent = () => {
       label: (
         <div className="flex items-center">
           <img 
-            src={require("./images/logo.png")}
+            src={require("./images/LogoMRv2_Nobackground.png")}
             alt="MakerRabbit Logo"
-            width='20px'
-            height='20px'
+            width='64px'
+            height='64px'
             style={{ marginRight: '10px' , verticalAlign: 'middle',marginBottom:'5px' }}
           />
           <Link to="/" className="font-bold">
