@@ -73,10 +73,10 @@ const ServicesPage = () => {
                   </h1>
                   <div className="hashTag">
                     <div className="hashTagContent">
-                      <p>#flutter</p>
+                      <p>#Flutter</p>
                     </div>
                     <div className="hashTagContent">
-                      <p>#react native</p>
+                      <p>#React Native</p>
                     </div>
                   </div>
                   <div className='ServiceContentContainer'>
@@ -86,20 +86,20 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>跨平台支援</span>
                       <ul>
-                        <li>iOS 與 Android 原生開發</li>
-                        <li>Flutter 框架整合</li>
-                        <li>API 與後端介接設計</li>
+                        <li>專業支援 iOS 與 Android 雙平台原生開發</li>
+                        <li>整合 Flutter 框架實現一次開發、多端部署</li>
+                        <li>支援原生模組擴充、裝置相容性測試</li>
                       </ul>
                     </div>
                     <div className="ServiceContentDetails">
                       <div className="iconWrapper">
                         <EditOutlined style={{ fontSize: '24px', color: '#fff' }} />
                       </div>
-                      <span style={{ fontSize: '20px', fontWeight: 'bold' }}>UI/UX 設計</span>
+                      <span style={{ fontSize: '20px', fontWeight: 'bold' }}>UI / UX 設計</span>
                       <ul>
-                        <li>使用者介面與體驗優化</li>
-                        <li>動態效果與動畫設計</li>
-                        <li>多語系支援與本地化</li>
+                        <li>強化操作流程，優化使用者體驗</li>
+                        <li>視覺動態設計，提升品牌形象</li>
+                        <li>支援多語系與在地化介面，符合品牌視覺與商業目標的設計邏輯</li>
                       </ul>
                     </div>
                     <div className="ServiceContentDetails">
@@ -108,9 +108,9 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>功能實現</span>
                       <ul>
-                        <li>即時推播通知</li>
-                        <li>資料同步與快取優化</li>
-                        <li>離線模式與安全機制</li>
+                        <li>實作推播通知、深層連結等用戶互動機制</li>
+                        <li>支援資料快取與背景同步，提升使用流暢度</li>
+                        <li>提供生物辨識、權限控管等進階安全設計</li>
                       </ul>
                     </div>
                   </div>
@@ -127,14 +127,31 @@ const ServicesPage = () => {
                         ),
                         children: (
                           <Steps
+                            className="custom-step-item"
                             direction="vertical"
                             size="small"
-                            current={2} // 這裡設定當前步驟，例如2表示目前執行到第3步
+                            current={0} // 這裡設定當前步驟，例如2表示目前執行到第3步
                             items={[
-                              { title: '需求分析', status: 'wait' }, // 狀態設為等待
-                              { title: 'UI/UX 設計', status: 'process' }, // 狀態設為進行中
-                              { title: '開發實作', status: 'wait' },
-                              { title: '上線部署', status: 'wait' }
+                              {
+                                title: '需求訪談與規劃',
+                                description: '釐清商業目標與用戶情境，確認核心功能與開發時程',
+                                status: 'wait'
+                              },
+                              {
+                                title: 'UI / UX 設計',
+                                description: '設計視覺風格與操作流程，打造良好的使用者體驗',
+                                status: 'wait'
+                              },
+                              {
+                                title: '前後端功能開發',
+                                description: '串接 API、實作核心功能並整合多平台框架',
+                                status: 'wait'
+                              },
+                              {
+                                title: '測試與上架部署',
+                                description: '完成測試後發布至 App Store / Google Play 並持續優化',
+                                status: 'wait'
+                              }
                             ]}
                           />
                         )
@@ -155,7 +172,7 @@ const ServicesPage = () => {
 
                   <div className="hashTag">
                     <div className="hashTagContent">
-                      <p>#react</p>
+                      <p>#React</p>
                     </div>
                     <div className="hashTagContent">
                       <p>#JavaScript</p>
@@ -164,7 +181,7 @@ const ServicesPage = () => {
                       <p>#Vue.js</p>
                     </div>
                     <div className="hashTagContent">
-                      <p>#Css</p>
+                      <p>#CSS</p>
                     </div>
                     <div className="hashTagContent">
                       <p>#HTML</p>
@@ -177,9 +194,9 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>前端開發</span>
                       <ul>
-                        <li>React 與 Vue 框架應用</li>
-                        <li>響應式設計與跨裝置支援</li>
-                        <li>資料庫設計與效能優化</li>
+                        <li>採用 React 與 Vue 等主流框架打造現代化網頁應用</li>
+                        <li>響應式設計，全面支援手機、平板與桌機瀏覽</li>
+                        <li>精簡畫面資料流程與效能設計，提升整體操作效率</li>
                       </ul>
                     </div>
                     <div className="ServiceContentDetails">
@@ -188,9 +205,9 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>部署與維護</span>
                       <ul>
-                        <li>Docker 容器化部署</li>
-                        <li>CI/CD 自動化流程</li>
-                        <li>伺服器安全性與負載測試</li>
+                        <li>使用 Docker 進行容器化部署，提升環境一致性與維護效率</li>
+                        <li>建立 CI/CD 自動化流程，確保快速穩定地上線更新</li>
+                        <li>強化伺服器安全與負載測試，保障系統穩定性與資安</li>
                       </ul>
                     </div>
                     <div className="ServiceContentDetails">
@@ -199,9 +216,9 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>功能實現</span>
                       <ul>
-                        <li>即時推播通知</li>
-                        <li>資料同步與快取優化</li>
-                        <li>離線模式與安全機制</li>
+                        <li>表單、查詢、報表等互動式功能模組開發</li>
+                        <li>權限管理、多角色登入與行為追蹤</li>
+                        <li>第三方服務整合（如金流、社群登入、地圖 API 等）</li>
                       </ul>
                     </div>
                   </div>
@@ -219,12 +236,28 @@ const ServicesPage = () => {
                           <Steps
                             direction="vertical"
                             size="small"
-                            current={2} // 這裡設定當前步驟，例如2表示目前執行到第3步
+                            current={0} // 這裡設定當前步驟，例如2表示目前執行到第3步
                             items={[
-                              { title: '需求分析', status: 'wait' }, // 狀態設為等待
-                              { title: 'UI/UX 設計', status: 'process' }, // 狀態設為進行中
-                              { title: '開發實作', status: 'wait' },
-                              { title: '上線部署', status: 'wait' }
+                              {
+                                title: '需求訪談與規劃',
+                                description: '確認網站目標、使用情境與功能架構',
+                                status: 'wait'
+                              },
+                              {
+                                title: 'UI / UX 設計',
+                                description: '設計響應式版面與互動流程，確保跨裝置一致體驗',
+                                status: 'wait'
+                              },
+                              {
+                                title: '前後端開發',
+                                description: '實作前端介面與後端邏輯，串接資料庫與 API',
+                                status: 'wait'
+                              },
+                              {
+                                title: '測試與部署',
+                                description: '進行功能測試、除錯與伺服器部署，確保穩定上線',
+                                status: 'wait'
+                              }
                             ]}
                           />
                         )
@@ -256,9 +289,9 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>硬體整合</span>
                       <ul>
-                        <li>外部感測器與驅動模組介接</li>
-                        <li>CAN BUS 與 I2C 通訊協議應用</li>
-                        <li>功耗優化與電池管理</li>
+                        <li>串接多種感測器與驅動模組，滿足多樣化應用需求</li>
+                        <li>支援主流通訊介面（I2C、SPI、CAN BUS 等）實現穩定資料交換</li>
+                        <li>優化功耗設計，延長電池續航與裝置使用壽命</li>
                       </ul>
                     </div>
                     <div className="ServiceContentDetails">
@@ -267,9 +300,9 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>韌體開發</span>
                       <ul>
-                        <li>FreeRTOS 多執行緒設計</li>
-                        <li>Bootloader 與系統升級實現</li>
-                        <li>即時處理與中斷機制</li>
+                        <li>採用有限狀態機或 FreeRTOS 架構，實現多工與即時控制</li>                        
+                        <li>支援 Bootloader、OTA 更新與版本管理機制</li>
+                        <li>強化中斷處理邏輯，提升系統穩定性與執行效率</li>
                       </ul>
                     </div>
                     <div className="ServiceContentDetails">
@@ -278,9 +311,9 @@ const ServicesPage = () => {
                       </div>
                       <span style={{ fontSize: '20px', fontWeight: 'bold' }}>應用實現</span>
                       <ul>
-                        <li>即時資料蒐集與分析</li>
-                        <li>無線通訊模組整合（Wi-Fi/BLE/LoRa）</li>
-                        <li>嵌入式系統穩定性測試</li>
+                        <li>整合 Wi-Fi、藍牙（BLE）、LoRa 等通訊模組</li>
+                        <li>實作資料上傳、遠端控制與即時狀態回報</li>
+                        <li>協助嵌入式裝置連結雲端或行動 APP，拓展產品價值</li>
                       </ul>
                     </div>
                   </div>
@@ -300,10 +333,26 @@ const ServicesPage = () => {
                             size="small"
                             current={2} // 這裡設定當前步驟，例如2表示目前執行到第3步
                             items={[
-                              { title: '需求分析', status: 'wait' }, // 狀態設為等待
-                              { title: 'UI/UX 設計', status: 'process' }, // 狀態設為進行中
-                              { title: '開發實作', status: 'wait' },
-                              { title: '上線部署', status: 'wait' }
+                              {
+                                title: '需求確認',
+                                description: '釐清產品功能、目標硬體平台與開發限制',
+                                status: 'wait'
+                              },
+                              {
+                                title: '系統架構設計',
+                                description: '規劃感測器、通訊模組與電源管理等整體系統架構',
+                                status: 'wait'
+                              },
+                              {
+                                title: '韌體撰寫與測試',
+                                description: '開發 MCU 韌體並進行單元測試與除錯',
+                                status: 'wait'
+                              },
+                              {
+                                title: '整合驗證與上線',
+                                description: '與硬體整合並進行系統驗證與穩定性測試',
+                                status: 'wait'
+                              }
                             ]}
                           />
                         )
